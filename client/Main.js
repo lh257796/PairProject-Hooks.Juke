@@ -1,9 +1,16 @@
 import React from "react";
+import Sidebar from './components/Sidebar';
+import Player from "./components/Player";
+import AllAlbums from "./components/AllAlbums";
 
 const Main = () => {
   return (
     <div id="main" className="row container">
-      {/* The music starts here! */}
+      <Sidebar />
+      <div className='container'>
+        <AllAlbums />
+      </div>
+      <Player />
     </div>
   );
 };
